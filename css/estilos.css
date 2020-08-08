@@ -14,7 +14,7 @@ h6{
 }
 h1{
     font-size: 40px;
-    line-height: 1.5em;
+    line-height: 1.5;
     letter-spacing: -.2;
     color: white;
     margin: 0;
@@ -113,7 +113,7 @@ figure {
     width: 500px;
 }
 
-.project-imagesContainer{
+.project-imageContainer{
     width: 500px;
 }
 
@@ -144,6 +144,19 @@ figure {
     padding: 0 10px;
 }
 
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid red;
+    flex-shrink: 0;
+}
+
 .footer {
     background-color: #1b2127;
     color: white;
@@ -162,10 +175,10 @@ figure {
 
 .event-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .event {
-    border: 1px solid;
     margin: 10px;
     width: 480px;
     flex-shrink: 0;
@@ -211,10 +224,10 @@ figure {
     height: 150px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .social {
-    
 }
 
 .social-link {
@@ -245,7 +258,7 @@ figure {
     border-color: gray;
     border-radius: 5px;
     border-style: solid;
-    padding: 5px 20px 5px 25px;
+    padding: 10px 20px 10px 25px;
     background-image: url('../images/envelope.svg');
     background-size: 15px 15px;
     background-repeat: no-repeat;
@@ -268,11 +281,11 @@ figure {
 }
 
 .container {
-    border: 1px solid red;
     width: 1000px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
+    flex-wrap: inherit;
 }
